@@ -1,0 +1,108 @@
+.buttonttransition {
+    background-color: rgb(11, 91, 167);
+    animation: colorchange 4.8s infinite alternate-reverse;
+}
+
+@keyframes colorchange {
+    0% {
+        background-color: rgb(168, 98, 178);
+    }
+
+    50% {
+        background-color: rgb(19, 151, 89);
+    }
+
+    100% {
+        background-color: rgb(175, 73, 5);
+    }
+}
+
+.image-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    /* adjust to the desired height */
+    overflow: hidden;
+}
+
+.image-container img {
+    position: absolute;
+    bottom: 0;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: cover;
+    animation: image-animation 6s ease infinite;
+}
+
+
+.image-container img:nth-child(1) {
+    animation-delay: 5s;
+}
+
+.image-container img:nth-child(2) {
+    animation-delay: 0s;
+    left: auto;
+    right: 0;
+}
+
+.image-container img:nth-child(3) {
+    animation-delay: 0s;
+    left: 0;
+    right: auto;
+}
+
+@keyframes image-animation {
+    0% {
+        transform: translateY(0%);
+        opacity: 0;
+    }
+
+
+
+
+    50% {
+        transform: translateY(+100%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(+0%);
+        opacity: 1;
+    }
+
+
+}
+
+.img1 {
+    top: 20%;
+}
+
+.img2 {
+    left: 50%;
+    top: 30%;
+}
+
+.vase {
+    top: 10%;
+    left: 75%;
+}
+
+/* h2 {
+
+    font-size: 50px;
+    margin: 20px;
+}
+*/
+p {
+    margin: 40px;
+    font-size: 30px;
+ } 
+
+.button {
+    margin-top: 20px;
+    background-color: azure;
+    width: 40%;
+    margin-left: 10px;
+}

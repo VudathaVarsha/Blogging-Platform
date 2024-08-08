@@ -1,0 +1,22 @@
+@media (max-width: 564px) {
+    .div1 {
+      height: 20vh;
+    }
+  }
+  
+  /* Custom CSS to show dropdown on hover */
+  .nav-item.dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  .nav-item.dropdown .dropdown-menu {
+    margin-top: 0; /* Adjust if needed */
+  }
+  
+  
+  /* Hover effect for dropdown-item button */
+  .dropdown-item:hover {
+    background-color: rgb(120, 87, 160);
+    color: white !important;
+  }
+  

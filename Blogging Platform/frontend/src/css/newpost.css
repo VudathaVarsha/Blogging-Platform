@@ -1,0 +1,51 @@
+/* newpost.css */
+
+.new-post-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid hsl(256, 26%, 52%);
+}
+
+.title-header {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border: none;
+}
+
+.title,
+.content,
+.tags,
+.category,
+.image {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.image {
+  padding: 3px; /* Adjust padding for the file input */
+}
+
+.image-preview img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+  margin: 10px 0;
+}
+
+.submit-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #3e8e41;
+}
