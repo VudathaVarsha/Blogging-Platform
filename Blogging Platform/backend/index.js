@@ -15,11 +15,14 @@ const port = process.env.port;
 app.use(express.json());
 app.use(cors());
 
+  
 mongoose
-  .connect(
-    "mongodb+srv://varsha:varsha24@cluster0.dpewpke.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
-  )
-  .then((response) => console.log("connected to database"));
+  .connect(process.env.MONGODB_URI)
+  .then(() => console.log("connected to database"))
+  .catch(err => console.error("Could not connect to database", err));
+
+ MONGODB_URI=mongodb+srv://varsha:varsha24@cluster0.dpewpke.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+  
 
 app.use("/api/users", userProfileRoutes);
 app.use("/api/categories", categoryRoutes);
